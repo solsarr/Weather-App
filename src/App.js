@@ -3,6 +3,7 @@ import './App.css';
 import Data from './components/data';
 import { useEffect, useState } from "react";
 import Base from './components/base';
+import DateTime from './components/time';
 
 function App() {
   
@@ -18,7 +19,7 @@ function App() {
             <div className="wrapper">
         <div className="base" style={{border: '1px solid black'}}>
 
-
+    <DateTime />
     <Data />
 
     </div>
