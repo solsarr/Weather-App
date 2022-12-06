@@ -21,7 +21,7 @@ function App() {
 
     <DateTime />
     <Data />
-
+    {/* <Base /> */}
     </div>
      </div>
          <button className="button">3 Days</button>
