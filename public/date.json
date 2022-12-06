@@ -1,0 +1,22 @@
+[
+    {
+        "city": "Kansas City",
+        "lat": 39.0997,
+        "lon": 94.5786
+    },
+    {
+        "city": "Los Angeles",
+        "lat": 34.0522,
+        "lon": 118.2437
+    },
+    {
+        "city": "New York",
+        "lat": 40.7128,
+        "lon": 74.0060
+    },
+    {
+        "city": "Providence",
+        "lat": 41.8240,
+        "lon": 71.4128
+    }
+]
