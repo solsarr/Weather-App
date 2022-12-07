@@ -11,7 +11,7 @@ async function handleData(){
         const foundData = await fetch('http://www.7timer.info/bin/api.pl?lon=77.4977&lat=27.2044&product=civil&output=json');
         const weatherData = await foundData.json()
         console.log(weatherData)
-        setData(weatherData)
+        setData(weatherData.dataseries)
     } catch(err){
         console.log(err)
     }

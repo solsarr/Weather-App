@@ -11,17 +11,14 @@ import React, {useState, useEffect} from "react";
             }
         });
 
-    //    function dateInterval(){
-    //     let 
-    //    }
     //   const currentTime = (date.getHours)+=3;
-//console.log(date.getHours)
+// console.log(date.getHours())
 // timer increments get hours and compare it to the timpoint of the dataseries
 // console.log(currentTime, 'time')
     return(
         <div>
             <p></p>
-            <p> Time : {date.toLocaleTimeString()}</p>
+            <p className="time"> Time : {date.toLocaleTimeString()}</p>
         </div>
     )
 }
