@@ -31,14 +31,14 @@ console.log(data)
         <div className="data">
         {/* <h1>{data.init}</h1>    */}
         <p>{data[0].weather}</p>
-        {/* {data.map((data,index)=>{
+        {data.slice(0,8).map((data,index)=>{
             return(
                 <p>{data.timepoint}</p>
                 
                     
                 
             )
-        })} */}
+        })}
         <p></p>
         </div>
     )
