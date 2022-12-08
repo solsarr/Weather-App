@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import Seven from "./Seven";
+import Three from "./Three";
 export default function Data(){
      const [data, setData] = useState(null);
     async function handleData(){
@@ -22,17 +24,10 @@ export default function Data(){
 
     return (
         <div className="data">
-            <p>Daily low temp: {data.daily.temperature_2m_min.join(' ')}</p>
-            <p>Daily high temp: {data.daily.temperature_2m_max.join(' ')}</p>
-            <p>Total inches of Rain: {data.daily.precipitation_sum.join(' ')}</p>
-            <p>Date: {data.daily.time.join(' ')}</p>
-     
-      
-        {/* {Object.keys(data).map((data,index)=>{
-            return(
-                <p key={index}>Fahrenheit {data.hourly.value}</p>
-            )
-        })} */}
+            <Seven wdata ={data} />
+            <Three wdata ={data} />
         </div>
     )
 }
+
+
