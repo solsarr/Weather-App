@@ -3,7 +3,7 @@ export default function Data(){
      const [data, setData] = useState(null);
     async function handleData(){
         try {
-            const foundData = await fetch('https://api.open-meteo.com/v1/forecast?latitude=39.10&longitude=-94.58&hourly=temperature_2m,precipitation,cloudcover,windspeed_10m&daily=temperature_2m_max,temperature_2m_min&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timeformat=unixtime&timezone=auto');
+            const foundData = await fetch('https://api.open-meteo.com/v1/forecast?latitude=39.10&longitude=-94.58&hourly=temperature_2m,precipitation,cloudcover,windspeed_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=auto');
             const weatherData = await foundData.json()
             setData(weatherData)
             console.log(weatherData)
@@ -22,8 +22,10 @@ export default function Data(){
 
     return (
         <div className="data">
-            {data.hourly.temperature_2m[1]}
-        
+            <p>Daily low temp: {data.daily.temperature_2m_min.join(' ')}</p>
+            <p>Daily high temp: {data.daily.temperature_2m_max.join(' ')}</p>
+            <p>Total inches of Rain: {data.daily.precipitation_sum.join(' ')}</p>
+            <p>Date: {data.daily.time.join(' ')}</p>
      
       
         {/* {Object.keys(data).map((data,index)=>{
