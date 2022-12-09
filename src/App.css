@@ -1,8 +1,16 @@
+body{
+  background-image: url('https://nordicapis.com/wp-content/uploads/How-to-Build-an-API-Driven-Weather-App.png');
+  background-size: cover;
+}
 .base{
+  position: absolute;
+  top: 100px;
   width:60%;
   border-radius: 30px;
-  border: 1px 1px 1px 1px black;
+  /* border: 1px 1px 1px 1px black; */
   height:400px;
+  display: flex;
+  justify-content: center;
 }
 .wrapper{
   
@@ -10,4 +18,74 @@
   justify-content: center;
   align-items: center;
   align-self: center;
+}
+.dataWrap{
+  height: 430px;
+  width: 700px;
+  border-radius: 30px 30px 0 0;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  background-image: url('https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg');
+  background-size: cover;
+
+}
+.btnWrap{
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  height:100px;
+  width: 700px;
+  background-image: url('https://www.desktopbackground.org/download/540x960/2010/08/07/60287_plain-blue-backgrounds-wallpaper_1920x1080_h.jpg');
+  background-size: cover;
+}
+.seven{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-family: 'PT Sans', sans-serif;
+
+
+}
+.three{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-family: 'PT Sans', sans-serif;
+ 
+
+}
+.todayBtn{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-family: 'PT Sans', sans-serif;
+
+}
+.time{
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  border-radius: 30px 30px 0 0;
+  border-color: aqua;
+}
+.threeData{
+  font-size: 25px;
+  height:50px;
+
+}
+.sevenData{
+  font-size: 15px;
+  height:10px
+}
+.dayOne{
+  height:118px
+}
+.dayTwo{
+  height:118px
+}
+.dayThree{
+   height:118px
+}
+.today{
+  font-family: 'PT Sans', sans-serif;
 }

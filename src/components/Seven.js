@@ -1,7 +1,10 @@
 export default function Forecast7(data) {
   return (
-    <div>
-      <div className="day1">
+    <div className="sevenData">
+      <div
+        className="day1"
+        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+      >
         <p>
           {" "}
           Date Today: {data.daily.time[0].slice(5)} Low:{" "}
@@ -11,7 +14,10 @@ export default function Forecast7(data) {
         </p>
       </div>
 
-      <div className="day2">
+      <div
+        className="day2"
+        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+      >
         <p>
           {" "}
           Date: {data.daily.time[1].slice(5)} Low:{" "}
@@ -21,7 +27,10 @@ export default function Forecast7(data) {
         </p>
       </div>
 
-      <div className="day3">
+      <div
+        className="day3"
+        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+      >
         <p>
           {" "}
           Date: {data.daily.time[2].slice(5)} Low:{" "}
@@ -31,7 +40,10 @@ export default function Forecast7(data) {
         </p>
       </div>
 
-      <div className="day4">
+      <div
+        className="day4"
+        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+      >
         <p>
           {" "}
           Date: {data.daily.time[3].slice(5)} Low:{" "}
@@ -41,7 +53,10 @@ export default function Forecast7(data) {
         </p>
       </div>
 
-      <div className="day5">
+      <div
+        className="day5"
+        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+      >
         <p>
           {" "}
           Date: {data.daily.time[4].slice(5)} Low:{" "}
@@ -51,7 +66,10 @@ export default function Forecast7(data) {
         </p>
       </div>
 
-      <div className="day6">
+      <div
+        className="day6"
+        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+      >
         <p>
           {" "}
           Date: {data.daily.time[5].slice(5)} Low:{" "}
@@ -61,7 +79,10 @@ export default function Forecast7(data) {
         </p>
       </div>
 
-      <div className="day7">
+      <div
+        className="day7"
+        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+      >
         <p>
           {" "}
           Date: {data.daily.time[6].slice(5)} Low:{" "}

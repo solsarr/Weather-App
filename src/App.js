@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="wrapper">
-        <div className="base" style={{ border: "1px solid black" }}>
+        <div className="base">
           <Data />
         </div>
       </div>

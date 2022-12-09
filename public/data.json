@@ -1,8 +1,8 @@
 [
     {
         "city": "Kansas City",
-        "lat": 39.0997,
-        "lon": 94.5786
+        "lat": 39.09,
+        "lon": 94.57
     },
     {
         "city": "Los Angeles",
@@ -16,7 +16,7 @@
     },
     {
         "city": "Providence",
-        "lat": 41.8240,
-        "lon": 71.4128
+        "lat": 41.82,
+        "lon": 71.41
     }
 ]
