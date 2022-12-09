@@ -30,7 +30,10 @@ export default function Forecast3(){
             <div className="7day">
     
             <div className="day1">
-                <p> Date Today {data.daily.time[1].slice(5)} Low: {data.daily.temperature_2m_min[0]}F - High: {data.daily.temperature_2m_max[0]}F  - Inches of rain: {data.daily.precipitation_sum[0]}"</p>
+                <p> Date Today {data.daily.time[1].slice(5)}
+                 Low: {data.daily.temperature_2m_min[0]}F 
+                 - High: {data.daily.temperature_2m_max[0]}F  
+                 - Inches of rain: {data.daily.precipitation_sum[0]}"</p>
             </div>
     
             <div className="day2">
