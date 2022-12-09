@@ -14,11 +14,34 @@ export default function Today(data) {
         <h1 className="todayRain">
           {" "}
           Inches of rain: {data.daily.precipitation_sum[0]}"{" "}
-          <div>
-            {data.daily.precipitation_sum[0] < 1 ? (
-              <div> No Rain </div>
+          <div className="icon">
+            {data.daily.weathercode[0] === 0 ? (
+              <div>
+                <span className="material-symbols-rounded">sunny</span>
+              </div>
+            ) : data.daily.weathercode[0] === 3 ? (
+              <div>
+                <span className="material-symbols-rounded">sunny</span>
+              </div>
+            ) : data.daily.weathercode[0] === 51 ||
+              53 ||
+              55 ||
+              61 ||
+              63 ||
+              65 ||
+              80 ||
+              81 ||
+              82 ? (
+              <div>
+                <span class="material-symbols-rounded">rainy</span>
+              </div>
             ) : (
-              <div> Rainy </div>
+              data.daily.weathercode[0] === 71 ||
+              73 ||
+              75 ||
+              77 ||
+              85 ||
+              86(<></>)
             )}
           </div>
         </h1>
