@@ -1,5 +1,7 @@
-
-
+body{
+  background-image: url('https://nordicapis.com/wp-content/uploads/How-to-Build-an-API-Driven-Weather-App.png');
+  background-size: cover;
+}
 .base{
   position: absolute;
   top: 100px;

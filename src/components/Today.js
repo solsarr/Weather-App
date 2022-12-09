@@ -1,5 +1,6 @@
 export default function Today(data) {
   console.log(data);
+
   return (
     <div>
       <div className="today">
@@ -12,7 +13,14 @@ export default function Today(data) {
         </h1>
         <h1 className="todayRain">
           {" "}
-          Inches of rain: {data.daily.precipitation_sum[0]}"
+          Inches of rain: {data.daily.precipitation_sum[0]}"{" "}
+          <div>
+            {data.daily.precipitation_sum[0] < 1 ? (
+              <div> No Rain </div>
+            ) : (
+              <div> Rainy </div>
+            )}
+          </div>
         </h1>
         <h1>Wind Speed MPH: {data.daily.windspeed_10m_max[0]}</h1>
       </div>
