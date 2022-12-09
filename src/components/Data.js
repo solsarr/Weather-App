@@ -61,11 +61,11 @@ const [data, setData] = useState(null);
     setSevenDay(false);
     setThreeDay(false);
     }} disabled={currentDay ? true : false}>Today</button>
-    {threeDay && <Forecast3 />}
+    {threeDay && <Forecast3 {...data}/>}
 
         {currentDay && <Today {...data}/>}
 
-        {sevenDay && <Forecast7 />}
+        {sevenDay && <Forecast7 {...data}/>}
         <DateTime />
     </div>
     )

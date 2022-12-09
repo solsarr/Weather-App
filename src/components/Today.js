@@ -1,4 +1,3 @@
-
 export default function Today(data){
     console.log(data)
 
