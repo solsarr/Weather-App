@@ -1,5 +1,9 @@
 export default function Forecast3(data){
    
+
+ 
+    
+    
         return (
             <div className="7day">
     
