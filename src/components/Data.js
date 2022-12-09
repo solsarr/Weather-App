@@ -23,10 +23,17 @@ export default function Data(){
 
 
     return (
-        <div className="data">
-            <Seven wdata ={data} />
-            <Three wdata ={data} />
+        <div >
+            <div className="data">
+            <Three />
+            <Seven />
+            </div>
+            <div className="btns">
+            <button className="button">3 Days</button>
+            <button className="button">1 Week</button>
+            </div>
         </div>
+       
     )
 }
 
