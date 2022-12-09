@@ -42,46 +42,52 @@ export default function Data() {
 
   return (
     <div>
-      <button
-        className="3day"
-        onClick={() => {
-          handleClick();
-          setSevenDay(false);
-          setCurrentDay(false);
-        }}
-        disabled={threeDay ? true : false}
-      >
-        3 Day
-      </button>
+      <div className="dataWrap" style={{ border: "1px solid black" }}>
+        <div className="time" style={{ border: "1px solid black" }}>
+          <DateTime />
+        </div>
+        {threeDay && <Forecast3 {...data} />}
 
-      <button
-        className="7day"
-        onClick={() => {
-          handleDay();
-          setThreeDay(false);
-          setCurrentDay(false);
-        }}
-        disabled={sevenDay ? true : false}
-      >
-        1 Week
-      </button>
-      <button
-        className="today"
-        onClick={() => {
-          handleToday();
-          setSevenDay(false);
-          setThreeDay(false);
-        }}
-        disabled={currentDay ? true : false}
-      >
-        Today
-      </button>
-      {threeDay && <Forecast3 {...data} />}
+        {currentDay && <Today {...data} />}
 
-      {currentDay && <Today {...data} />}
+        {sevenDay && <Forecast7 {...data} />}
+      </div>
+      <div className="btnWrap" style={{ border: "1px solid black" }}>
+        <button
+          className="three"
+          onClick={() => {
+            handleClick();
+            setSevenDay(false);
+            setCurrentDay(false);
+          }}
+          disabled={threeDay ? true : false}
+        >
+          3 Day
+        </button>
 
-      {sevenDay && <Forecast7 {...data} />}
-      <DateTime />
+        <button
+          className="seven"
+          onClick={() => {
+            handleDay();
+            setThreeDay(false);
+            setCurrentDay(false);
+          }}
+          disabled={sevenDay ? true : false}
+        >
+          1 Week
+        </button>
+        <button
+          className="todayBtn"
+          onClick={() => {
+            handleToday();
+            setSevenDay(false);
+            setThreeDay(false);
+          }}
+          disabled={currentDay ? true : false}
+        >
+          Today
+        </button>
+      </div>
     </div>
   );
 }
