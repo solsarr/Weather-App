@@ -11,7 +11,6 @@ import { useState, useEffect } from "react";
             const foundData = await fetch('https://api.open-meteo.com/v1/forecast?latitude=39.10&longitude=-94.58&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_sum,rain_sum,showers_sum,snowfall_sum,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=auto');
             const weatherData = await foundData.json()
             setData(weatherData)
-            console.log(data)
 
         } catch(err){
             console.log(err)

@@ -22,9 +22,6 @@ export default function Today(){
             <h1>Loading...</h1>
             )
         }
-        console.log(data)
-
-
 
     return (
         <div>
