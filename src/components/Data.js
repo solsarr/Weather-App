@@ -5,20 +5,6 @@ import Today from "./Today";
 import DateTime from "./DateTime";
 
 export default function Data() {
-  //   const [city, setCity] = useState([]);
-  //   const getData = () => {
-  //     fetch("data.json")
-  //       .then(function (response) {
-  //         return response.json();
-  //       })
-  //       .then(function (myJson) {
-  //         setCity(myJson);
-  //       });
-  //   };
-  //   useEffect(() => {
-  //     getData();
-  //     console.log(city);
-  //   }, []);
   const [threeDay, setThreeDay] = useState(false);
 
   const handleClick = () => {
@@ -60,7 +46,7 @@ export default function Data() {
       <div className=""></div>
       <div className="dataWrap" style={{ border: "1px solid black" }}>
         <div className="time" style={{ border: "1px solid black" }}>
-          <DateTime />
+          <DateTime {...data} />
         </div>
         {threeDay && <Forecast3 {...data} />}
 
@@ -69,6 +55,17 @@ export default function Data() {
         {sevenDay && <Forecast7 {...data} />}
       </div>
       <div className="btnWrap" style={{ border: "1px solid black" }}>
+        <button
+          className="seven"
+          onClick={() => {
+            handleDay();
+            setThreeDay(false);
+            setCurrentDay(false);
+          }}
+          disabled={sevenDay ? true : false}
+        >
+          7 Day
+        </button>
         <button
           className="three"
           onClick={() => {
@@ -81,17 +78,6 @@ export default function Data() {
           3 Day
         </button>
 
-        <button
-          className="seven"
-          onClick={() => {
-            handleDay();
-            setThreeDay(false);
-            setCurrentDay(false);
-          }}
-          disabled={sevenDay ? true : false}
-        >
-          1 Week
-        </button>
         <button
           className="todayBtn"
           onClick={() => {

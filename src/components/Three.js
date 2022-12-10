@@ -3,7 +3,11 @@ export default function Forecast3(data) {
     <div className="threeData">
       <div
         className="dayOne"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -16,7 +20,11 @@ export default function Forecast3(data) {
 
       <div
         className="dayTwo"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -29,7 +37,11 @@ export default function Forecast3(data) {
 
       <div
         className="dayThree"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}

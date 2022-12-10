@@ -3,7 +3,11 @@ export default function Forecast7(data) {
     <div className="sevenData">
       <div
         className="day1"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -16,7 +20,11 @@ export default function Forecast7(data) {
 
       <div
         className="day2"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -29,7 +37,11 @@ export default function Forecast7(data) {
 
       <div
         className="day3"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -42,7 +54,11 @@ export default function Forecast7(data) {
 
       <div
         className="day4"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -55,7 +71,11 @@ export default function Forecast7(data) {
 
       <div
         className="day5"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -68,7 +88,11 @@ export default function Forecast7(data) {
 
       <div
         className="day6"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
@@ -81,7 +105,11 @@ export default function Forecast7(data) {
 
       <div
         className="day7"
-        style={{ border: "1px solid black", borderColor: "rgba(0, 0, 0, .2)" }}
+        style={{
+          border: "1px solid black",
+          borderColor: "rgba(0, 0, 0, .2)",
+          backgroundColor: "rgba(255,255,255, .2",
+        }}
       >
         <p>
           {" "}
