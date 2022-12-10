@@ -11,13 +11,13 @@ export const DateTime = (data) => {
 
   return (
     <div className="time">
-      <p className="time">
+      <p>
         {" "}
         Time : {date.toLocaleTimeString()}
         {data.daily.weathercode[0] === 0 ? (
           <span className="material-symbols-rounded">sunny</span>
         ) : data.daily.weathercode[0] === 3 ? (
-          <span class="material-symbols-rounded">cloudy</span>
+          <span className="material-symbols-rounded">cloudy</span>
         ) : data.daily.weathercode[0] === 51 ||
           53 ||
           55 ||

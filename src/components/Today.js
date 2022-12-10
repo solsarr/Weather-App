@@ -1,6 +1,4 @@
 export default function Today(data) {
-  console.log(data);
-
   return (
     <div className="window">
       <div className="today">

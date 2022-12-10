@@ -5,20 +5,6 @@ import Today from "./Today";
 import DateTime from "./DateTime";
 
 export default function Data() {
-  //   const [city, setCity] = useState([]);
-  //   const getData = () => {
-  //     fetch("data.json")
-  //       .then(function (response) {
-  //         return response.json();
-  //       })
-  //       .then(function (myJson) {
-  //         setCity(myJson);
-  //       });
-  //   };
-  //   useEffect(() => {
-  //     getData();
-  //     console.log(city);
-  //   }, []);
   const [threeDay, setThreeDay] = useState(false);
 
   const handleClick = () => {
