@@ -1,27 +1,17 @@
 body{
-  background: url('https://nordicapis.com/wp-content/uploads/How-to-Build-an-API-Driven-Weather-App.png') no-repeat center center fixed;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: url('https://nordicapis.com/wp-content/uploads/How-to-Build-an-API-Driven-Weather-App.png');
   background-size: cover;
-  min-width: 100%;
-  min-height: 100%;
-
 }
 .base{
   position: absolute;
   top: 100px;
-  width:70%;
+  width:60%;
   border-radius: 30px;
- border: 1px 1px 1px 1px black;
- height:400px;
+  height:400px;
   display: flex;
   justify-content: center;
-} 
-
+}
 .wrapper{
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +25,7 @@ body{
   font-family: 'PT Sans', sans-serif;
   background-image: url('https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg');
   background-size: cover;
-
+  box-shadow: 5px 5px black;
 }
 .btnWrap{
   border-radius: 0 0 30px 30px;
@@ -46,29 +36,28 @@ body{
   width: 700px;
   background-image: url('https://www.desktopbackground.org/download/540x960/2010/08/07/60287_plain-blue-backgrounds-wallpaper_1920x1080_h.jpg');
   background-size: cover;
+  box-shadow: 5px 5px black;
 }
 .seven{
   height: 50px;
   width: 50px;
   border-radius: 50%;
   font-family: 'PT Sans', sans-serif;
-
-
 }
 .three{
   height: 50px;
   width: 50px;
   border-radius: 50%;
   font-family: 'PT Sans', sans-serif;
- 
-
+}
+.today{
+  height: 430px;
 }
 .todayBtn{
   height: 50px;
   width: 50px;
   border-radius: 50%;
   font-family: 'PT Sans', sans-serif;
-
 }
 .time{
   font-family: 'Anton', sans-serif;
@@ -79,11 +68,10 @@ body{
 .threeData{
   font-size: 25px;
   height:50px;
-
 }
 .sevenData{
   font-size: 15px;
-  height:10px
+  height:10px;
 }
 .dayOne{
   height:118px
@@ -94,42 +82,3 @@ body{
 .dayThree{
    height:118px
 }
-.today{
-
-  font-family: 'PT Sans', sans-serif;
-
-}
-.time{
-  display: flex;
-  justify-content: center;
-
-}
-
-.material-symbols-rounded {
-margin-left: 60px;
-  text-align: right;
-  font-size: 30px;
-  
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 200,
-  'opsz' 48
-  
-}
-
-@media (max-width: 750px){
-  .dataWrap{
-    width: 300px;
-    height: 600px;
-  }
-}
-@media (max-width: 750px){
-  .btnWrap{
-    width: 300px;
-  }
-}
-
-
-
-
